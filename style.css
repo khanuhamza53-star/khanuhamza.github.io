@@ -1,0 +1,152 @@
+body {
+            font-family: 'Inter', sans-serif;
+        }
+        .tab-button.active {
+            border-bottom-color: #4f46e5;
+            color: #4f46e5;
+            font-weight: 600;
+        }
+        .tab-button {
+            border-bottom-width: 2px;
+            border-bottom-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <main class="w-full">
+        <section id="hero" class="w-full bg-white text-center py-24 md:py-32 px-4 shadow-sm">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+                    Next Gen Media
+                </h1>
+                <p class="text-xl md:text-2xl text-indigo-600 font-semibold mb-8">
+                    Let’s Frame the Future.
+                </p>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+                    Welcome to the university’s dynamic, professional storytelling hub. We are the visual voice of this university, defining the future of content together.
+                </p>
+                <a href="#welcome" class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-300">
+                    Join Our Mission
+                </a>
+            </div>
+        </section>
+
+        <section id="what-we-do" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What We Do</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                        Our mission is to elevate the university's narrative by producing high-quality, impactful visual content. Explore our core services below.
+                    </p>
+                </div>
+
+                <div class="w-full">
+                    <div class="flex justify-center border-b border-gray-300 mb-8 space-x-4 md:space-x-8" id="tabs-container">
+                        <button class="tab-button active text-base md:text-lg py-3 px-4 transition-colors duration-200" data-tab="photography">
+                            <span class="text-2xl mr-2">📷</span> Photography
+                        </button>
+                        <button class="tab-button text-gray-500 text-base md:text-lg py-3 px-4 transition-colors duration-200" data-tab="video">
+                            <span class="text-2xl mr-2">🎬</span> Film & Videography
+                        </button>
+                        <button class="tab-button text-gray-500 text-base md:text-lg py-3 px-4 transition-colors duration-200" data-tab="digital">
+                            <span class="text-2xl mr-2">📱</span> Digital Content
+                        </button>
+                    </div>
+
+                    <div class="max-w-3xl mx-auto">
+                        <div id="photography" class="tab-content bg-white p-8 rounded-lg shadow-sm">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Photography</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                We capture the moments that define our campus. Our photography team covers everything from major university events and dynamic student life to professional headshots for faculty, staff, and students, ensuring every image tells a compelling story.
+                            </p>
+                        </div>
+                        <div id="video" class="tab-content hidden bg-white p-8 rounded-lg shadow-sm">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Cinematography & Videography</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                From concept to final cut, we produce high-end promotional films, engaging documentary shorts, and insightful interview features. We are storytellers who use motion and sound to bring the university's most important initiatives and achievements to life.
+                            </p>
+                        </div>
+                        <div id="digital" class="tab-content hidden bg-white p-8 rounded-lg shadow-sm">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Digital Content Strategy</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                We create fast, engaging, and optimized content that speaks directly to the next generation. This includes developing Reels, TikToks, and dynamic motion graphics designed for maximum impact on social media platforms, keeping the university's voice modern and relevant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-join" class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">The Next Gen Advantage</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+                        Being a part of this collective offers concrete benefits that go far beyond the classroom. You're not just practicing a skill; you're building your future.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <span class="text-5xl" role="img" aria-label="portfolio icon">💼</span>
+                        <h3 class="text-2xl font-semibold text-gray-900 mt-6 mb-3">Build an Industry-Grade Portfolio</h3>
+                        <p class="text-base text-gray-700 leading-relaxed">
+                            Work on real projects with real clients—department heads, marketing teams, and event organizers. Every project you complete is a professional piece for your job interviews.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <span class="text-5xl" role="img" aria-label="tools icon">🛠️</span>
+                        <h3 class="text-2xl font-semibold text-gray-900 mt-6 mb-3">Master Skills & Cutting-Edge Gear</h3>
+                        <p class="text-base text-gray-700 leading-relaxed">
+                            Gain exclusive access to professional-grade equipment and, more importantly, peer-to-peer training. We learn by doing, and we learn from each other.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                        <span class="text-5xl" role="img" aria-label="globe icon">🌐</span>
+                        <h3 class="text-2xl font-semibold text-gray-900 mt-6 mb-3">Build Your Professional Network</h3>
+                        <p class="text-base text-gray-700 leading-relaxed">
+                            The relationships you forge with members, faculty, and alumni are invaluable. This group is a launchpad to find your future creative partners and mentors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="py-16 md:py-24 bg-indigo-700 text-white">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+                <h3 class="text-lg font-semibold uppercase tracking-wider mb-4">Our Mission</h3>
+                <blockquote class="text-2xl md:text-3xl font-medium leading-normal md:leading-snug">
+                    "To elevate the university's narrative by producing high-quality, impactful visual content that connects and inspires."
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="welcome" class="py-16 md:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">A Welcome to Our New Members</h2>
+                <p class="text-lg text-gray-600 mt-6 max-w-3xl mx-auto leading-relaxed">
+                    To all the new students joining us: **Welcome to the next chapter of your creative life.** You are the lifeblood of Next Gen Media. You bring the fresh perspectives and new ideas that drive innovation.
+                </p>
+                <p class="text-lg text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed bg-gray-100 p-6 rounded-lg border border-gray-200">
+                    Don't worry about experience. If you have passion, curiosity, and a willingness to show up and learn, you are already qualified. We will provide the training, the gear, and the opportunities. **You bring the voice.**
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">Get Involved</h3>
+            <p class="mb-6">
+                Ready to create, learn, and lead? Contact us to find out about our next meeting.
+            </p>
+            <p class="mb-8">
+                <a href="mailto:contact@nextgenmedia.example.com" class="text-indigo-400 hover:text-indigo-300 font-semibold">contact@nextgenmedia.example.com</a>
+            </p>
+            <p class="text-sm">
+                &copy; 2025 Next Gen Media. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
